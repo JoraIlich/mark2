@@ -56,7 +56,7 @@ public class PlayerMovement : MonoBehaviour
     void Update()
     {
         //Sneak
-        if (Input.GetKeyDown(KeyCode.C) && canMove)
+        if (Input.GetButtonDown("Sneak") && canMove)
         {
             isCrouching = !isCrouching;
 
@@ -105,24 +105,7 @@ public class PlayerMovement : MonoBehaviour
             stamina.value += recoveryRate;
         }
     }
-    //void PlayerSneak()
-    // {
-    //if (Input.GetButton("Sneak"))
-    // {
-    // characterController.height = 1f;
-    //  Debug.Log(1488);
-    // }
-    //if (Input.GetKeyDown(KeyCode.LeftControl))
-    //{
-    //characterController.height = 1f;
-    //gravityPlayer.groundCheck.transform.localPosition = new Vector3(0, -0.5f, 0);
-    //}
-    //if (Input.GetKeyUp(KeyCode.LeftControl))
-    // {
-    //characterController.height = 2f;
-    //gravityPlayer.groundCheck.transform.localPosition = new Vector3(0, -1f, 0);
-    //  }
-    //}
+
 
     void PlayerMoveForward()
     {

@@ -252,6 +252,7 @@ GameObject:
   - component: {fileID: 7477771578558369660}
   - component: {fileID: 4474183846043807702}
   - component: {fileID: 3211523049591390168}
+  - component: {fileID: 6393070070733952428}
   m_Layer: 0
   m_Name: Rifle
   m_TagString: Untagged
@@ -269,7 +270,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 3.720692, y: 2.531, z: 2.616}
-  m_LocalScale: {x: 1.46, y: 1.46, z: 1.46}
+  m_LocalScale: {x: 2.11, y: 2.11, z: 2.11}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 3992796953418736462}
@@ -400,6 +401,21 @@ MonoBehaviour:
   fireAudio: {fileID: 0}
   reloadAudio: {fileID: 0}
   manager: {fileID: 0}
+--- !u!114 &6393070070733952428
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2927445029961351274}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8bcf6979d9dc3a443b83ef1e16083827, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  swayAmount: 0.02
+  maxSwayAmount: 0.06
+  smoothAmount: 6
 --- !u!1 &4405316254162722952
 GameObject:
   m_ObjectHideFlags: 0

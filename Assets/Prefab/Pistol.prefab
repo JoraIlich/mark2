@@ -466,6 +466,7 @@ GameObject:
   - component: {fileID: 5565505524223445967}
   - component: {fileID: 947421418953137652}
   - component: {fileID: 5804203021200673898}
+  - component: {fileID: 7965185291796795919}
   m_Layer: 0
   m_Name: Pistol
   m_TagString: Untagged
@@ -612,3 +613,18 @@ MonoBehaviour:
   fireAudio: {fileID: 0}
   reloadAudio: {fileID: 0}
   manager: {fileID: 0}
+--- !u!114 &7965185291796795919
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7257987285137928834}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8bcf6979d9dc3a443b83ef1e16083827, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  swayAmount: 0.02
+  maxSwayAmount: 0.06
+  smoothAmount: 6
