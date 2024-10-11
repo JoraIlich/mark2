@@ -4,7 +4,7 @@ public class InventoryForItems : MonoBehaviour
 {
     public Texture crosshairTexture;
     public PlayerMovement playerController;
-    public InteractiveItem[] availableItems; //List with Prefabs of all the available items
+    public Item[] availableItems; //List with Prefabs of all the available items
 
     //Available items slots
     int[] itemSlots = new int[12];
@@ -18,7 +18,7 @@ public class InventoryForItems : MonoBehaviour
     Vector2 dragOffset = Vector2.zero;
 
     //Item Pick up
-    InteractiveItem detectedItem;
+    Item detectedItem;
     int detectedItemIndex;
 
     // Start is called before the first frame update
@@ -133,9 +133,9 @@ public class InventoryForItems : MonoBehaviour
 
             if (objectHit.CompareTag("Respawn"))
             {
-                if ((detectedItem == null || detectedItem.transform != objectHit) && objectHit.GetComponent<InteractiveItem>() != null)
+                if ((detectedItem == null || detectedItem.transform != objectHit) && objectHit.GetComponent<Item>() != null)
                 {
-                    InteractiveItem itemTmp = objectHit.GetComponent<InteractiveItem>();
+                    Item itemTmp = objectHit.GetComponent<Item>();
 
                     //Check if item is in availableItemsList
                     for (int i = 0; i < availableItems.Length; i++)
